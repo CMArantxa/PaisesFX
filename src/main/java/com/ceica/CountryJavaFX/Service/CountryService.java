@@ -96,6 +96,7 @@ public class CountryService implements ICountryJavaFX{
     //metodo para hacer consultas a la API
     private String getDataUrl(String url) throws IOException {
 
+
         URL obj = new URL(url);
         // Abrimos una conexión HTTP
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
