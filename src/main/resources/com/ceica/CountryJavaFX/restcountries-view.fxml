@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ceica.CountryJavaFX.RestCountriesController">
+   <children>
+      <ComboBox fx:id="comboRegions" layoutX="37.0" layoutY="43.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="150.0" promptText="Regions" />
+      <TableView fx:id="countryNameTbl" layoutX="37.0" layoutY="75.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="298.0" prefWidth="184.0">
+        <columns>
+          <TableColumn fx:id="countryNameColumn" prefWidth="159.0" text="Nombre" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="flagvista" fitHeight="123.0" fitWidth="216.0" layoutX="309.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="txtcapital" layoutX="309.0" layoutY="248.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" promptText="capital" />
+      <TextField fx:id="txtcountryname" layoutX="309.0" layoutY="204.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" promptText="Name" />
+      <TextField fx:id="txtcoin" layoutX="309.0" layoutY="294.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" promptText="moneda" />
+      <TextField fx:id="txtpoblacion" layoutX="309.0" layoutY="340.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" promptText="poblacion" />
+      <Button fx:id="btnBorrar" layoutX="504.0" layoutY="273.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnClear" text="Clear" />
+      <Label layoutX="238.0" layoutY="204.0" prefHeight="25.0" prefWidth="59.0" text="Nombre" />
+      <Label layoutX="238.0" layoutY="248.0" prefHeight="25.0" prefWidth="59.0" text="Capital" />
+      <Label layoutX="238.0" layoutY="294.0" prefHeight="25.0" prefWidth="59.0" text="Moneda" />
+      <Label layoutX="238.0" layoutY="340.0" prefHeight="25.0" prefWidth="59.0" text="Población" />
+   </children>
+</AnchorPane>
